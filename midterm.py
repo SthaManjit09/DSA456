@@ -125,16 +125,16 @@ def print_primes(n):
 # Q6: Memory Usage - Arrays vs. Linked Lists
 
 # **Arrays (Contiguous Memory Allocation)**
-# - ✅ Memory-efficient: Uses contiguous memory blocks, reducing overhead.
-# - ✅ Fast index-based access (O(1)) due to direct memory addressing.
-# - ❌ Fixed size: Requires resizing (copying to a new larger array) when full.
-# - ❌ Wastes memory if allocated size is larger than needed.
+# -  Memory-efficient: Uses contiguous memory blocks, reducing overhead.
+# -  Fast index-based access (O(1)) due to direct memory addressing.
+# -  Fixed size: Requires resizing (copying to a new larger array) when full.
+# -  Wastes memory if allocated size is larger than needed.
 
 # **Linked Lists (Dynamic Memory Allocation)**
-# - ✅ Dynamic size: No need to preallocate memory, grows as needed.
-# - ✅ No memory wastage due to resizing like arrays.
-# - ❌ Extra memory overhead: Each node stores additional pointers (next/prev).
-# - ❌ Slower access (O(n)) since elements are scattered in memory.
+# -  Dynamic size: No need to preallocate memory, grows as needed.
+# -  No memory wastage due to resizing like arrays.
+# -  Extra memory overhead: Each node stores additional pointers (next/prev).
+# -  Slower access (O(n)) since elements are scattered in memory.
 
 # **Conclusion:**
 # - **Use arrays** when memory is limited and fast access is required.
@@ -224,11 +224,3 @@ print("Search 15:", "Found" if ll.search(15) else "Not Found")  # Output: Found
 print("Search 25:", "Found" if ll.search(25) else "Not Found")  # Output: Not Found
 # Q7: Sorted Doubly Linked List Implementation
 
-# **Insert (O(n))**:
-# - Finds correct position & inserts node while keeping list sorted.
-
-# **Min/Max (O(1))**:
-# - Direct access to smallest (front) & largest (back) elements.
-
-# **Optimized Search (O(n))**:
-# - Uses two-pointer approach (from front & back) to improve efficiency.
